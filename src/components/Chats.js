@@ -7,6 +7,7 @@ import { ChatEngine } from 'react-chat-engine'
 import { useAuth } from "../contexts/AuthContexts"
 
 import { auth } from "../firebase"
+import { AppBar, Avatar, Button, Toolbar,Typography } from "@material-ui/core"
 
 export default function Chats() {
   const didMountRef = useRef(false)
@@ -34,7 +35,6 @@ export default function Chats() {
         return
       }
       
-      // Get-or-Create should be in a Firebase Function
       axios.get(
         'https://api.chatengine.io/users/me/',
         { headers: { 
@@ -65,8 +65,6 @@ export default function Chats() {
           .catch(e => console.log('e', e.response))
         })
       })
-      // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
     }
   }, [user, history])
   
@@ -75,16 +73,15 @@ export default function Chats() {
 
   return (
     <div className='chats-page'>
-      <div className='nav-bar'>
-        <div className='logo-tab'>
-          Unichat
-        </div>
-
-        <div onClick={handleLogout} className='logout-tab'>
-          Logout
-        </div>
-      </div>
-
+      <AppBar position="static" >
+          <Toolbar style={{justifyContent:'space-between'}}>
+            <Typography variant="h6" style={{display:'flex',alignItems:'center'}}>
+              <Avatar src={user.photoURL}/>
+              Chatme
+            </Typography>
+            <Button onClick={handleLogout} color="inherit">Logout</Button>
+          </Toolbar>
+      </AppBar>
       <ChatEngine 
         height='calc(100vh - 66px)'
         projectID='a89e0748-474c-4f6f-87b5-b577ef61da8b'
