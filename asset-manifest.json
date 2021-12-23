@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/chatme/static/css/main.e82e295d.chunk.css",
-    "main.js": "/chatme/static/js/main.d9cea81c.chunk.js",
-    "main.js.map": "/chatme/static/js/main.d9cea81c.chunk.js.map",
+    "main.js": "/chatme/static/js/main.0d0f0059.chunk.js",
+    "main.js.map": "/chatme/static/js/main.0d0f0059.chunk.js.map",
     "runtime-main.js": "/chatme/static/js/runtime-main.ca353142.js",
     "runtime-main.js.map": "/chatme/static/js/runtime-main.ca353142.js.map",
     "static/js/2.2716bcfc.chunk.js": "/chatme/static/js/2.2716bcfc.chunk.js",
     "static/js/2.2716bcfc.chunk.js.map": "/chatme/static/js/2.2716bcfc.chunk.js.map",
     "index.html": "/chatme/index.html",
-    "precache-manifest.92f98a18b23782672cb9233f873bdacc.js": "/chatme/precache-manifest.92f98a18b23782672cb9233f873bdacc.js",
+    "precache-manifest.11ec83c5561001ff62945fc07c79c56d.js": "/chatme/precache-manifest.11ec83c5561001ff62945fc07c79c56d.js",
     "service-worker.js": "/chatme/service-worker.js",
     "static/css/main.e82e295d.chunk.css.map": "/chatme/static/css/main.e82e295d.chunk.css.map",
     "static/js/2.2716bcfc.chunk.js.LICENSE.txt": "/chatme/static/js/2.2716bcfc.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ca353142.js",
     "static/js/2.2716bcfc.chunk.js",
     "static/css/main.e82e295d.chunk.css",
-    "static/js/main.d9cea81c.chunk.js"
+    "static/js/main.0d0f0059.chunk.js"
   ]
 }
