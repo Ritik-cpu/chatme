@@ -23,7 +23,7 @@ export default function Login() {
       <Card id='login-card'>
           <CardContent>
             <Typography variant="h5" style={{background:'#2979ff',color:'white',padding:'16px'}} color="initial">
-              WELCOME IN CHATME
+              WELCOME IN CHATME...
             </Typography>
             <Button style={{background:'#ff1744',marginTop:'40px',color:'white'}} onClick={()=>auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}>
                 <GoogleOutlined style={{marginRight:'10px'}}/> Sign in with Google
